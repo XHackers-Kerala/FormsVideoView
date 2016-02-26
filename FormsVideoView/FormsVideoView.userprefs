@@ -1,0 +1,38 @@
+﻿<Properties StartupItem="Sample/iOS/VideoViewSampleApp.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.9.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sample/VideoViewSampleApp/Pages/LaunchPage.xaml.cs">
+    <Files>
+      <File FileName="Sample/VideoViewSampleApp/Pages/VideoPage.xaml.cs" Line="20" Column="1" />
+      <File FileName="FormsVideoView/FormsVideoView/VideoView.cs" Line="1" Column="1" />
+      <File FileName="FormsVideoView/iOS/VideoViewRenderer.cs" Line="1" Column="1" />
+      <File FileName="FormsVideoView/iOS/UIVideoView.cs" Line="1" Column="1" />
+      <File FileName="../../Documents/sreeraj/workspace/lifestopten/LifesTopTen/LifesTopTen/Pages/MenuPage.xaml.cs" Line="50" Column="128" />
+      <File FileName="Sample/iOS/AppDelegate.cs" Line="27" Column="16" />
+      <File FileName="Sample/VideoViewSampleApp/Pages/LaunchPage.xaml.cs" Line="19" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FormsVideoView" expanded="True">
+            <Node name="Sample" expanded="True">
+              <Node name="VideoViewSampleApp" expanded="True">
+                <Node name="Pages" expanded="True">
+                  <Node name="LaunchPage.xaml" expanded="True">
+                    <Node name="LaunchPage.xaml.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="VideoViewSampleApp.iOS" expanded="True">
+                <Node name="Packages" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
