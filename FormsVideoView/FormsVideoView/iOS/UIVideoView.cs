@@ -28,7 +28,7 @@ namespace FormsVideoView.iOS
 			moviePlayer.ShouldAutoplay = false;
 			MPMoviePlayerController.Notifications.ObserveLoadStateDidChange (LoadStateChanged);
 			Add (moviePlayer.View);
-			isLoading = true;
+			isLoading = isStreaming;
 		}
 
 		public void StartPlaying()

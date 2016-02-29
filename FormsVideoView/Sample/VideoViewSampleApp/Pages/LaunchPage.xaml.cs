@@ -17,21 +17,23 @@ namespace VideoViewSampleApp
 
 		void LoadFromWebClicked(object sender, EventArgs e)
 		{
-			Navigation.PushModalAsync (new VideoPage (true));
+			Navigation.PushAsync (new VideoPage (true,Constants.VideoUrl));
 		}
 
 		async void LoadEmbeddedClicked(object sender, EventArgs e)
 		{
-//			try {
-//				var device = Resolver.Resolve<IDevice>();
-//
-//				////RM: hack for working on windows phone? 
-//				var _mediaPicker = DependencyService.Get<IMediaPicker>() ?? device.MediaPicker;
-//				var takePhotoResult= await _mediaPicker.SelectVideoAsync(new VideoMediaStorageOptions(){});
-//			}
-//			catch {
-//			}
-			Navigation.PushModalAsync (new VideoPage (false));
+			try {
+				var device = Resolver.Resolve<IDevice>();
+
+				////RM: hack for working on windows phone? 
+				var _mediaPicker = DependencyService.Get<IMediaPicker>() ?? device.MediaPicker;
+				var takePhotoResult= await _mediaPicker.SelectVideoAsync(new VideoMediaStorageOptions(){});
+				Navigation.PushAsync (new VideoPage (false,takePhotoResult.Path));
+			}
+			catch {
+				MessagingCenter.Send (this, "Action Cancelled");
+			}
+
 		}
 	}
 }

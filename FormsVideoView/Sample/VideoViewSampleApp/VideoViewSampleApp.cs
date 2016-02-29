@@ -9,7 +9,7 @@ namespace VideoViewSampleApp
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new LaunchPage();
+			MainPage = new NavigationPage(new LaunchPage());
 		}
 
 		protected override void OnStart ()

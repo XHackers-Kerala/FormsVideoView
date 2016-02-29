@@ -69,8 +69,9 @@
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchDebug>true</MtouchDebug>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Abdusha M A (HL79JK6V5Q)</CodesignKey>
     <MtouchUseSGen>true</MtouchUseSGen>
+    <CodesignProvision>5e611a42-ca75-4ec3-858c-e109b61c35de</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

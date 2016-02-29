@@ -19,7 +19,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)small.mp4" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\LaunchPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

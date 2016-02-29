@@ -7,11 +7,10 @@ namespace VideoViewSampleApp
 {
 	public partial class VideoPage : ContentPage
 	{
-		public VideoPage (bool isStreaming)
+		public VideoPage (bool isStreaming,string fileName)
 		{
 			InitializeComponent ();
 
-			var fileName = isStreaming ? Constants.VideoUrl : Constants.EmbeddedUrl;
 			videoView.MediaFileItem = new FormsVideoView.MediaFile (fileName, isStreaming);
 		}
 	}
