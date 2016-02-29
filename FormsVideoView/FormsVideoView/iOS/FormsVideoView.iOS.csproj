@@ -103,5 +103,6 @@
   <ItemGroup>
     <Compile Include="VideoViewRenderer.cs" />
     <Compile Include="UIVideoView.cs" />
+    <Compile Include="LoadingOverlay.cs" />
   </ItemGroup>
 </Project>

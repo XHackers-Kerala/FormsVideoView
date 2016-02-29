@@ -8,8 +8,9 @@ namespace FormsVideoView.iOS
 {
 	public class UIVideoView : UIView
 	{
-		bool isMediaSet;
+		bool isMediaSet,isLoading,loaderDisplayed;
 		MPMoviePlayerController moviePlayer;
+		LoadingOverlay loadingOverlay;
 
 		public UIVideoView (string videoUrl,bool isStreaming)
 		{
@@ -25,14 +26,25 @@ namespace FormsVideoView.iOS
 			moviePlayer.RepeatMode = MPMovieRepeatMode.None;
 			moviePlayer.ScalingMode = MPMovieScalingMode.AspectFit;
 			moviePlayer.ShouldAutoplay = false;
-
+			MPMoviePlayerController.Notifications.ObserveLoadStateDidChange (LoadStateChanged);
 			Add (moviePlayer.View);
+			isLoading = true;
 		}
 
 		public void StartPlaying()
 		{
 			if(isMediaSet)
 				moviePlayer.Play ();
+		}
+
+		void LoadStateChanged (object sender, Foundation.NSNotificationEventArgs args)
+		{
+			if (moviePlayer.LoadState == MPMovieLoadState.Playable && loadingOverlay != null) 
+			{
+				loadingOverlay.Hide ();
+				isLoading = false;
+				loaderDisplayed = false;
+			}
 		}
 
 		public void ChangeMedia(string videoUrl,bool isStreaming)
@@ -52,6 +64,13 @@ namespace FormsVideoView.iOS
 			base.LayoutSubviews ();
 
 			moviePlayer.View.Frame = Frame;
+
+			if (isLoading && !loaderDisplayed) 
+			{
+				loadingOverlay = new LoadingOverlay (Frame);
+				Add (loadingOverlay);
+				loaderDisplayed = true;
+			}
 		}
 	}
 }
