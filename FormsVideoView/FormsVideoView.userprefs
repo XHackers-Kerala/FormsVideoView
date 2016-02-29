@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Sample/iOS/VideoViewSampleApp.iOS.csproj">
+﻿<Properties StartupItem="Sample/Droid/VideoViewSampleApp.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.iPad" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Sample/iOS/Info.plist">
     <Files>
