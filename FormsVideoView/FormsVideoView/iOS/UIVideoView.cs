@@ -24,7 +24,6 @@ namespace FormsVideoView.iOS
 			moviePlayer.View.ContentMode = UIViewContentMode.ScaleAspectFit;
 			moviePlayer.RepeatMode = MPMovieRepeatMode.None;
 			moviePlayer.ScalingMode = MPMovieScalingMode.AspectFit;
-			moviePlayer.ControlStyle = MPMovieControlStyle.Fullscreen;
 			moviePlayer.ShouldAutoplay = false;
 
 			Add (moviePlayer.View);
