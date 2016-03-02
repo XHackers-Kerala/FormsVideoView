@@ -1,23 +1,28 @@
-﻿<Properties StartupItem="Sample/Droid/VideoViewSampleApp.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.iPad" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sample/iOS/Info.plist">
+﻿<Properties StartupItem="Sample/iOS/VideoViewSampleApp.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.9.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FormsVideoView/iOS/Info.plist">
     <Files>
-      <File FileName="Sample/VideoViewSampleApp/Pages/VideoPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="FormsVideoView/FormsVideoView/VideoView.cs" Line="1" Column="1" />
+      <File FileName="FormsVideoView/Droid/VideoViewRenderer.cs" Line="46" Column="13" />
       <File FileName="FormsVideoView/iOS/VideoViewRenderer.cs" Line="1" Column="1" />
-      <File FileName="FormsVideoView/iOS/UIVideoView.cs" Line="73" Column="28" />
-      <File FileName="Sample/iOS/AppDelegate.cs" Line="1" Column="1" />
       <File FileName="Sample/VideoViewSampleApp/Pages/LaunchPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Sample/VideoViewSampleApp/Constants.cs" Line="12" Column="1" />
-      <File FileName="Sample/iOS/Info.plist" />
+      <File FileName="Sample/Droid/obj/Debug/VideoViewSampleApp.Droid..Users.fingent.Documents.sreeraj.workspace.FormsVideoView.FormsVideoView.Sample.VideoViewSampleApp.Pages.VideoPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="FormsVideoView/FormsVideoView/VideoView.cs" Line="1" Column="1" />
+      <File FileName="Sample/VideoViewSampleApp/Pages/VideoPage.xaml" Line="1" Column="1" />
+      <File FileName="Sample/Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Sample/iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="FormsVideoView/iOS/UIVideoView.cs" Line="9" Column="2" />
+      <File FileName="FormsVideoView/iOS/Info.plist" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FormsVideoView" expanded="True">
-            <Node name="Sample" expanded="True">
-              <Node name="VideoViewSampleApp.iOS" expanded="True" selected="True" />
+            <Node name="FormsVideoView" expanded="True">
+              <Node name="FormsVideoView.iOS" expanded="True">
+                <Node name="Info.plist" selected="True" />
+              </Node>
             </Node>
+            <Node name="Sample" expanded="True" />
           </Node>
         </State>
       </Pad>
