@@ -37,11 +37,43 @@ namespace FormsMediaPlayer.Droid
 			}
 		}
 		
-		public partial class String
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f050000
+			public static int progressBar1 = 2131034112;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
+			{
+			}
+		}
+		
+		public partial class Layout
 		{
 			
 			// aapt resource value: 0x7f020000
-			public static int library_name = 2130837504;
+			public static int ProgressLayout = 2130837504;
+			
+			static Layout()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Layout()
+			{
+			}
+		}
+		
+		public partial class String
+		{
+			
+			// aapt resource value: 0x7f030000
+			public static int library_name = 2130903040;
 			
 			static String()
 			{
@@ -49,6 +81,22 @@ namespace FormsMediaPlayer.Droid
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f040000
+			public static int progress_bar_style = 2130968576;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

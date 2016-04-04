@@ -13,6 +13,7 @@ namespace FormsMediaPlayer.iOS
 
 		public UIVideoView (string videoUrl,bool isStreaming)
 		{
+			MPMoviePlayerController.Notifications.ObserveLoadStateDidChange (LoadStateChanged);
 			moviePlayer = new MPMoviePlayerController ();
 			moviePlayer.ControlStyle = MPMovieControlStyle.Embedded;
 			if (!string.IsNullOrEmpty (videoUrl)) 
@@ -25,7 +26,6 @@ namespace FormsMediaPlayer.iOS
 			moviePlayer.RepeatMode = MPMovieRepeatMode.None;
 			moviePlayer.ScalingMode = MPMovieScalingMode.AspectFit;
 			moviePlayer.ShouldAutoplay = false;
-			MPMoviePlayerController.Notifications.ObserveLoadStateDidChange (LoadStateChanged);
 			Add (moviePlayer.View);
 			isLoading = isStreaming;
 		}
@@ -38,7 +38,7 @@ namespace FormsMediaPlayer.iOS
 
 		void LoadStateChanged (object sender, Foundation.NSNotificationEventArgs args)
 		{
-			if (moviePlayer.LoadState == MPMovieLoadState.Playable && loadingOverlay != null) 
+			if ((moviePlayer.LoadState == MPMovieLoadState.PlaythroughOK || moviePlayer.LoadState== MPMovieLoadState.Playable) && loaderDisplayed && loadingOverlay != null) 
 			{
 				loadingOverlay.Hide ();
 				isLoading = false;

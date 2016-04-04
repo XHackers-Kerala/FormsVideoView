@@ -29,8 +29,8 @@ namespace FormsMediaPlayerSample
 				var takePhotoResult= await _mediaPicker.SelectVideoAsync(new VideoMediaStorageOptions(){});
 				Navigation.PushAsync (new VideoPage (false,takePhotoResult.Path));
 			}
-			catch {
-				MessagingCenter.Send (this, "Action Cancelled");
+			catch (Exception xx) {
+				DisplayAlert("Video Selection", "Video Selection Cancelled","OK");
 			}
 
 		}

@@ -1,17 +1,20 @@
 ﻿<Properties StartupItem="Sample/Droid/FormsMediaPlayerSample.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 10 (KitKat)" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Sample/FormsMediaPlayerSample/Pages/LaunchPage.xaml.cs">
     <Files>
-      <File FileName="Sample/Droid/MainActivity.cs" Line="42" Column="1" />
-      <File FileName="Sample/FormsMediaPlayerSample/Pages/LaunchPage.xaml.cs" Line="28" Column="1" />
+      <File FileName="Sample/FormsMediaPlayerSample/Constants.cs" Line="1" Column="1" />
+      <File FileName="FormsMediaPlayer/FormsMediaPlayer.Droid/Renderers/VideoViewRenderer.cs" Line="1" Column="1" />
+      <File FileName="../../../../../Projects/XamarinFormsMediaPlayer/FormsMediaPlayer/FormsMediaPlayer.Droid/Renderers/VideoViewRenderer.cs" Line="1" Column="1" />
+      <File FileName="FormsMediaPlayer/FormsMediaPlayer.iOS/Renderers/VideoViewRenderer.cs" Line="1" Column="1" />
+      <File FileName="FormsMediaPlayer/FormsMediaPlayer.iOS/Custom Views/UIVideoView.cs" Line="1" Column="1" />
+      <File FileName="../../MHS/Droid/Activities/LoginActivity.cs" Line="1" Column="1" />
+      <File FileName="Sample/FormsMediaPlayerSample/Pages/LaunchPage.xaml.cs" Line="33" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="XamarinFormsMediaPlayer" expanded="True">
-            <Node name="FormsMediaPlayer" expanded="True">
-              <Node name="FormsMediaPlayer" expanded="True" />
-            </Node>
+            <Node name="FormsMediaPlayer" expanded="True" />
             <Node name="Sample" expanded="True">
               <Node name="FormsMediaPlayerSample" expanded="True">
                 <Node name="Pages" expanded="True">
@@ -20,7 +23,9 @@
                   </Node>
                 </Node>
               </Node>
-              <Node name="FormsMediaPlayerSample.Droid" expanded="True" />
+              <Node name="FormsMediaPlayerSample.Droid" expanded="True">
+                <Node name="Resources" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -28,7 +33,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/fingent/Documents/sreeraj/workspace/FormsVideoView/XamarinFormsMediaPlayer/FormsMediaPlayer/FormsMediaPlayer.Droid/Renderers/VideoViewRenderer.cs" line="74" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

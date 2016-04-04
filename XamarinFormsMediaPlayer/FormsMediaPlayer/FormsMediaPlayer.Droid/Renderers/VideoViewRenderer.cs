@@ -3,12 +3,16 @@ using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
 using FormsMediaPlayer;
 using FormsMediaPlayer.Droid;
+using Android.Widget;
+using Android.Media;
+using Android.App;
 
-[assembly:ExportRenderer(typeof(VideoView), typeof(VideoViewRenderer))]
+[assembly:ExportRenderer(typeof(FormsMediaPlayer.VideoView), typeof(VideoViewRenderer))]
 namespace FormsMediaPlayer.Droid
 {
-	public class VideoViewRenderer: ViewRenderer<VideoView, Android.Widget.VideoView> 
+	public class VideoViewRenderer: ViewRenderer<VideoView, Android.Widget.VideoView>,MediaPlayer.IOnPreparedListener
 	{
+		ProgressDialog progress;
 		public VideoViewRenderer ()
 		{
 		}
@@ -25,12 +29,26 @@ namespace FormsMediaPlayer.Droid
 
 			var videoView = new Android.Widget.VideoView (Forms.Context);
 
+			var mediaController = new MediaController (Forms.Context);
+			mediaController.SetMediaPlayer (videoView);
+			videoView.SetMediaController (mediaController);
+
 			SetNativeControl (videoView);
 
-			if(Element.MediaFileItem.IsStreaming)
-				videoView.SetVideoURI ( Android.Net.Uri.Parse (Element.MediaFileItem.FileName));
+			if (Element.MediaFileItem.IsStreaming) 
+			{
+				videoView.SetVideoURI (Android.Net.Uri.Parse (Element.MediaFileItem.FileName));
+				progress = new ProgressDialog (Forms.Context,Resource.Style.progress_bar_style);
+				progress.Indeterminate = true;
+				progress.SetProgressStyle (ProgressDialogStyle.Spinner);
+				progress.SetCancelable (false);
+				progress.Show ();
+				progress.SetContentView (Resource.Layout.ProgressLayout);
+			}
 			else
 				videoView.SetVideoURI ( Android.Net.Uri.FromFile( new Java.IO.File(Element.MediaFileItem.FileName)));
+
+			videoView.SetOnPreparedListener (this);
 
 			videoView.Start ();
 
@@ -49,6 +67,12 @@ namespace FormsMediaPlayer.Droid
 				else
 					Control.SetVideoURI ( Android.Net.Uri.FromFile( new Java.IO.File(Element.MediaFileItem.FileName)));
 			}
+		}
+
+		public void OnPrepared (MediaPlayer mp)
+		{
+			if(progress!=null)
+				progress.Dismiss ();
 		}
 
 	}

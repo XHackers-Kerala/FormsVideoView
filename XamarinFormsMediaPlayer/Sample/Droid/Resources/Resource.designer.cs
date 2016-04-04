@@ -3061,7 +3061,10 @@ namespace FormsMediaPlayerSample.Droid
 			global::XLabs.Forms.Resource.Styleable.ViewStubCompat_android_id = global::FormsMediaPlayerSample.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::XLabs.Forms.Resource.Styleable.ViewStubCompat_android_inflatedId = global::FormsMediaPlayerSample.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::XLabs.Forms.Resource.Styleable.ViewStubCompat_android_layout = global::FormsMediaPlayerSample.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::FormsMediaPlayer.Droid.Resource.Id.progressBar1 = global::FormsMediaPlayerSample.Droid.Resource.Id.progressBar1;
+			global::FormsMediaPlayer.Droid.Resource.Layout.ProgressLayout = global::FormsMediaPlayerSample.Droid.Resource.Layout.ProgressLayout;
 			global::FormsMediaPlayer.Droid.Resource.String.library_name = global::FormsMediaPlayerSample.Droid.Resource.String.library_name;
+			global::FormsMediaPlayer.Droid.Resource.Style.progress_bar_style = global::FormsMediaPlayerSample.Droid.Resource.Style.progress_bar_style;
 		}
 		
 		public partial class Animation
@@ -5203,6 +5206,9 @@ namespace FormsMediaPlayerSample.Droid
 			// aapt resource value: 0x7f0a0071
 			public const int play_pause = 2131361905;
 			
+			// aapt resource value: 0x7f0a0085
+			public const int progressBar1 = 2131361925;
+			
 			// aapt resource value: 0x7f0a0006
 			public const int progress_circular = 2131361798;
 			
@@ -5548,19 +5554,22 @@ namespace FormsMediaPlayerSample.Droid
 			public const int notification_template_part_time = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int select_dialog_item_material = 2130903088;
+			public const int ProgressLayout = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int select_dialog_multichoice_material = 2130903089;
+			public const int select_dialog_item_material = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int select_dialog_singlechoice_material = 2130903090;
+			public const int select_dialog_multichoice_material = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int support_simple_spinner_dropdown_item = 2130903091;
+			public const int select_dialog_singlechoice_material = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int week = 2130903092;
+			public const int support_simple_spinner_dropdown_item = 2130903092;
+			
+			// aapt resource value: 0x7f030035
+			public const int week = 2130903093;
 			
 			static Layout()
 			{
@@ -6128,17 +6137,17 @@ namespace FormsMediaPlayerSample.Droid
 			// aapt resource value: 0x7f070008
 			public const int Base_Widget_Design_TabLayout = 2131165192;
 			
-			// aapt resource value: 0x7f070145
-			public const int CalendarCell = 2131165509;
+			// aapt resource value: 0x7f070146
+			public const int CalendarCell = 2131165510;
+			
+			// aapt resource value: 0x7f070148
+			public const int CalendarCell_CalendarDate = 2131165512;
 			
 			// aapt resource value: 0x7f070147
-			public const int CalendarCell_CalendarDate = 2131165511;
+			public const int CalendarCell_DayHeader = 2131165511;
 			
-			// aapt resource value: 0x7f070146
-			public const int CalendarCell_DayHeader = 2131165510;
-			
-			// aapt resource value: 0x7f070144
-			public const int CalendarTitle = 2131165508;
+			// aapt resource value: 0x7f070145
+			public const int CalendarTitle = 2131165509;
 			
 			// aapt resource value: 0x7f070004
 			public const int CardView = 2131165188;
@@ -6682,6 +6691,9 @@ namespace FormsMediaPlayerSample.Droid
 			
 			// aapt resource value: 0x7f070003
 			public const int Widget_MediaRouter_MediaRouteButton = 2131165187;
+			
+			// aapt resource value: 0x7f070144
+			public const int progress_bar_style = 2131165508;
 			
 			static Style()
 			{
