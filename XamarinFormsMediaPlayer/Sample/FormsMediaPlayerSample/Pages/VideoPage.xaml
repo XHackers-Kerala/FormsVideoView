@@ -3,8 +3,8 @@
  xmlns:formsvideoview="clr-namespace:FormsMediaPlayer;assembly=FormsMediaPlayer">
 	<ContentPage.Content>
 		<AbsoluteLayout>
-                <formsvideoview:VideoView x:Name="videoView" AbsoluteLayout.LayoutBounds="0.5, 0.5,  1, 300"
-                AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+                <formsvideoview:VideoView x:Name="videoView" AbsoluteLayout.LayoutBounds="0.5, 0.5,  1, 1"
+                AbsoluteLayout.LayoutFlags="PositionProportional,SizeProportional"/>
 		</AbsoluteLayout>
 	</ContentPage.Content>
 </ContentPage>
